@@ -69,7 +69,8 @@ html, body, .wrapper {
 /* End normalize */
 :root {
   --color-white: #fff;
-  --color-black: #000; }
+  --color-black: #000;
+  --color-blue: #61b0df; }
 
 .button {
   display: block;
@@ -158,5 +159,24 @@ html, body, .wrapper {
   line-height: 50px;
   text-align: center;
   color: var(--color-white); }
+
+.instalation {
+  padding: 100px 0; }
+  .instalation__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .instalation__title {
+    max-width: 1007px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    text-align: center;
+    color: var(--color-black); }
+    .instalation__title-blue {
+      color: var(--color-blue); }
+    .instalation__title-thin {
+      font-weight: 400; }
 
 /*# sourceMappingURL=app.css.map */
