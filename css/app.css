@@ -398,4 +398,43 @@ html, body, .wrapper {
         line-height: 29px;
         color: var(--color-white); }
 
+.flat {
+  padding: 100px 0;
+  background: #f5f7f9; }
+  .flat__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .flat__title {
+    margin-bottom: 76px;
+    max-width: 710px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 36px;
+    line-height: 58px;
+    text-align: center;
+    color: var(--color-black); }
+    .flat__title--blue {
+      color: var(--color-blue); }
+    .flat__title--bold {
+      font-weight: 700; }
+  .flat__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%; }
+  .flat__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E0DFDF;
+    padding: 32px 60px 20px;
+    background: #F5F7F9; }
+    .flat__item-img {
+      margin-bottom: 25px; }
+    .flat__item-text {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 22px;
+      line-height: 35px;
+      text-align: center;
+      color: var(--color-black); }
+
 /*# sourceMappingURL=app.css.map */
