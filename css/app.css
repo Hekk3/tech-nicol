@@ -61,12 +61,102 @@ html, body, .wrapper {
   grid-template-rows: auto 1fr auto; }
 
 .container {
-  max-width: 1160px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px; }
 
 /* End normalize */
+:root {
+  --color-white: #fff;
+  --color-black: #000; }
+
+.button {
+  display: block;
+  border-radius: 50px;
+  padding: 24px 64px;
+  text-decoration: none;
+  background: linear-gradient(308.06deg, #2D96D4 29.63%, #50C8FF 91.17%); }
+  .button__text {
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-white); }
+
 /* End imports*/
+.hero {
+  position: relative;
+  padding: 290px 0 243px;
+  background: url(../images/jpg/hero-bg.jpg) center/cover no-repeat; }
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 34px 0;
+  width: 100%; }
+  .header__top {
+    margin-bottom: 25px; }
+  .header__top, .header__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header__info {
+    display: flex; }
+    .header__info-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .header__info-block:first-child {
+        margin-right: 56px; }
+    .header__info-first {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-decoration: none;
+      margin-bottom: 5px; }
+    .header__info-second {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 14px;
+      line-height: 17px; }
+    .header__info-first, .header__info-second {
+      color: var(--color-white); }
+  .header__list {
+    display: flex;
+    align-items: center; }
+  .header__item:not(:last-child) {
+    margin-right: 42px; }
+  .header__link {
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: var(--color-white); }
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+.hero__title {
+  margin-bottom: 56px;
+  font-family: PF Agora Slab Pro, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: var(--color-white); }
+.hero__subtitle {
+  margin-bottom: 78px;
+  max-width: 680px;
+  font-family: PF Agora Slab Pro, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--color-white); }
 
 /*# sourceMappingURL=app.css.map */

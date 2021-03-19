@@ -1,5 +1,118 @@
 /* Start imports*/
 
 @import "normalize";
+@import "vars";
+@import "option-styles";
 
 /* End imports*/
+
+.hero {
+  position: relative;
+  padding: 290px 0 243px;
+  background: url(../images/jpg/hero-bg.jpg) center / cover no-repeat;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 34px 0;
+  width: 100%;
+
+  &__top {
+    margin-bottom: 25px;
+  }
+
+  &__top,
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &:first-child {
+        margin-right: 56px;
+      }
+    }
+
+    &-first {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-weight: 700;
+      font-size: 20px;;
+      line-height: 24px;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+
+    &-second {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &-first,
+    &-second {
+      color: var(--color-white);
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
+
+  &__link {
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: var(--color-white);
+  }
+}
+
+.hero {
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-bottom: 56px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  &__subtitle {
+    margin-bottom: 78px;
+    max-width: 680px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--color-white);
+  }
+}

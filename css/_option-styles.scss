@@ -1,0 +1,15 @@
+.button {
+  display: block;
+  border-radius: 50px;
+  padding: 24px 64px;
+  text-decoration: none;
+  background: linear-gradient(308.06deg, #2D96D4 29.63%, #50C8FF 91.17%);
+
+  &__text {
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-white);
+  }
+}
