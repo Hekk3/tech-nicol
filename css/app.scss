@@ -152,3 +152,88 @@
 }
 
 // End Instalation
+
+
+// Numeral
+
+.numeral {
+  border: 1px solid #e0dfdf;
+  background: #f5f7f9;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 243px 1fr;
+  }
+
+  &__left,
+  &__right {
+    padding: 102px 0;
+  }
+
+  &__right {
+    padding-left: 56px;
+  }
+
+  &__left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-blue-2);
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100vh;
+      height: 100%;
+      background: url(../images/png/numeral-left-bg.png) center / cover no-repeat;
+    }
+
+    &-text {
+      position: relative;
+      z-index: 2;
+      font-family: PF Agora Slab Pro;
+      font-size: 36px;
+      line-height: 58px;
+      color: var(--color-white);
+
+      &--bold {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 195px;
+
+    &-img {
+      margin-bottom: 17px;
+    }
+
+    &-p {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 18px;
+      line-height: 29px;
+      color: var(--color-black);
+    }
+
+    &-span {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 103px;
+      color: var(--color-dark-1);
+    }
+  }
+}
+
+// End Numeral
