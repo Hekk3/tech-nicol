@@ -558,3 +558,60 @@
 }
 
 // End Flat
+
+
+// footer
+
+.footer {
+  padding: 88px 0;
+  background: #3C3D40;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 110px;
+    width: 53px;
+    height: 23px;
+
+    &-img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__socials {
+    display: flex;
+  }
+
+  &__social,
+  &__tern,
+  &__copy {
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: var(--color-white);
+  }
+
+  &__social {
+
+    &:first-child {
+      margin-right: 31px;
+    }
+  }
+
+  &__tern {
+    margin-right: 78px;
+  }
+}
+
+// End footer

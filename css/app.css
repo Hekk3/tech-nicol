@@ -437,4 +437,33 @@ html, body, .wrapper {
       text-align: center;
       color: var(--color-black); }
 
+.footer {
+  padding: 88px 0;
+  background: #3C3D40; }
+  .footer__content {
+    display: flex;
+    justify-content: space-between; }
+  .footer__left, .footer__right {
+    display: flex;
+    align-items: center; }
+  .footer__logo {
+    margin-right: 110px;
+    width: 53px;
+    height: 23px; }
+    .footer__logo-img {
+      width: 100%;
+      object-fit: contain; }
+  .footer__socials {
+    display: flex; }
+  .footer__social, .footer__tern, .footer__copy {
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: var(--color-white); }
+  .footer__social:first-child {
+    margin-right: 31px; }
+  .footer__tern {
+    margin-right: 78px; }
+
 /*# sourceMappingURL=app.css.map */
