@@ -560,6 +560,82 @@
 // End Flat
 
 
+// Blog
+
+.blog {
+  padding: 100px 0;
+  background: #f5f7f9;
+
+  &__title {
+    margin-bottom: 70px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 36px;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-black);
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
+  }
+
+  &__item {
+    max-width: 270px;
+
+    &-img {
+      margin-bottom: 7px;
+      width: 100%;
+      height: auto;
+    }
+
+    &-time {
+      display: flex;
+      align-items: center;
+      margin-bottom: 7px;
+
+      &-img {
+        width: 17px;
+        height: 17px;
+        margin-right: 7px;
+      }
+
+      &-text {
+        margin-top: 3px;
+        font-family: PF Agora Slab Pro, sans-serif;
+        font-size: 9px;
+        line-height: 12px;
+        color: var(--color-black);
+      }
+    }
+
+    &-block {
+      padding-right: 20px;
+    }
+
+    &-title {
+      margin-bottom: 7px;
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--color-black);
+    }
+
+    &-text {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 10px;
+      line-height: 14px;
+      color: var(--color-black);
+    }
+  }
+}
+
+// End Blog
+
+
 // footer
 
 .footer {
