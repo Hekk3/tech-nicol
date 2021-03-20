@@ -558,6 +558,67 @@ html, body, .wrapper {
       line-height: 14px;
       color: var(--color-black); }
 
+.clients {
+  padding: 100px 0; }
+  .clients__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .clients__title {
+    margin-bottom: 70px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 36px;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-black); }
+    .clients__title--blue {
+      font-weight: 700;
+      color: var(--color-blue); }
+  .clients__slider-container {
+    position: relative;
+    max-width: 1032px; }
+  .clients__slider-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 189px; }
+    .clients__slider-slide-img {
+      margin-bottom: 30px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 5px 20px 2px rgba(124, 125, 129, 0.29); }
+    .clients__slider-slide-name {
+      margin-bottom: 8px;
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 22px;
+      line-height: 35px;
+      text-align: center;
+      color: var(--color-black); }
+    .clients__slider-slide-text {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 17px;
+      line-height: 27px;
+      text-align: center;
+      color: var(--color-black); }
+  .clients__slider-arrow {
+    border: 0;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer; }
+  .clients__slider-prev {
+    position: absolute;
+    left: -38px;
+    top: 50%;
+    transform: translateY(-50%); }
+  .clients__slider-next {
+    position: absolute;
+    right: -38px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg); }
+
 .footer {
   padding: 88px 0;
   background: #3C3D40; }

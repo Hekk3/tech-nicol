@@ -740,6 +740,98 @@
 // End Blog
 
 
+// clients
+
+.clients {
+  padding: 100px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 36px;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-black);
+
+    &--blue {
+      font-weight: 700;
+      color: var(--color-blue);
+    }
+  }
+
+  &__slider {
+
+    &-container {
+      position: relative;
+      max-width: 1032px;
+    }
+
+    &-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 189px;
+
+      &-img {
+        margin-bottom: 30px;
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 5px 20px 2px rgba(124, 125, 129, 0.29);
+      }
+
+      &-name {
+        margin-bottom: 8px;
+        font-family: PF Agora Slab Pro, sans-serif;
+        font-size: 22px;
+        line-height: 35px;
+        text-align: center;
+        color: var(--color-black);
+      }
+
+      &-text {
+        font-family: PF Agora Slab Pro, sans-serif;
+        font-size: 17px;
+        line-height: 27px;
+        text-align: center;
+        color: var(--color-black);
+      }
+    }
+
+    &-arrow {
+      border: 0;
+      outline: none;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    &-prev {
+      position: absolute;
+      left: -38px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &-next {
+      position: absolute;
+      right: -38px;
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+}
+
+// End clients
+
+
 // footer
 
 .footer {
