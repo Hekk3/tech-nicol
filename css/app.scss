@@ -86,6 +86,16 @@
     text-decoration: none;
     color: var(--color-white);
   }
+
+  &.header-none-position {
+    position: static;
+    margin-bottom: 60px;
+
+    p,
+    a {
+      color: var(--color-black);
+    }
+  }
 }
 
 .hero {
@@ -1051,3 +1061,235 @@
 }
 
 // End footer
+
+
+//============
+// landing end
+
+
+// breadkcrumbs
+
+.breadcrumbs {
+
+  &__list {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  &__link {
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-blue);
+  }
+
+  &__empty {
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-black);
+  }
+}
+
+// End breadkcrumbs
+
+
+// services-open
+
+.services-open {
+  padding-bottom: 100px;
+
+  &__title {
+    margin-bottom: 50px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    color: var(--color-black);
+  }
+
+  &__text {
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--color-black);
+
+    &-block {
+      margin-bottom: 50px;
+    }
+
+    &--margin {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E0DFDF;
+    padding: 35px 50px 25px;
+    background: #F5F7F9;
+
+    &-img {
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      margin-bottom: 8px;
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 22px;
+      line-height: 31px;
+      text-align: center;
+      color: var(--color-black);
+    }
+
+    &-link {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      text-decoration: underline;
+      color: var(--color-blue-2);
+    }
+  }
+}
+
+// End services-open
+
+
+// services-link
+
+.services-link {
+  padding-bottom: 100px;
+
+  &__title {
+    margin-bottom: 50px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    color: var(--color-black);
+  }
+
+  &__block {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 370px;
+  }
+
+  &__img {
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+
+    &-img {
+      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &-text {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 12px;
+      line-height: 17px;
+      color: var(--color-black);
+    }
+  }
+
+  &__text {
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--color-black);
+
+    &--margin {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__right {
+
+    &-block {
+      border: 1px solid #E0DFDF;
+      padding: 33px 26px;
+      background: #fff;
+    }
+
+    &-title {
+      margin-bottom: 20px;
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+      color: var(--color-black);
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    padding: 14px 13px 14px 30px;
+    background: #fff;
+    box-shadow: 0px 5px 20px 2px rgba(124, 125, 129, 0.29);
+  }
+
+  &__input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    background: transparent;
+  }
+
+  &__button {
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+
+  &__another {
+
+    &-list {
+      padding-left: 30px;
+    }
+
+    &-item {
+      max-width: 173px;
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 16px;
+      line-height: 23px;
+      color: var(--color-black);
+
+      &:not(:last-child) {
+        margin-bottom: 28px;
+      }
+    }
+  }
+}
+
+// End services-link
