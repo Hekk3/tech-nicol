@@ -560,6 +560,110 @@
 // End Flat
 
 
+// work
+
+.work {
+  padding: 100px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 36px;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-black);
+
+    &--blue {
+      font-weight: 700;
+      color: var(--color-blue);
+    }
+  }
+
+  &__slider {
+
+    &-container {
+      position: relative;
+      max-width: 1032px;
+    }
+
+    &-slide {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 24px 10px;
+      min-height: 201px;
+      background: url(../images/jpg/work-slide-item-bg.jpg) center / cover no-repeat;
+
+      &-name {
+        margin-bottom: 13px;
+        font-family: PF Agora Slab Pro, sans-serif;
+        font-size: 18px;
+        line-height: 29px;
+        text-align: center;
+        color: var(--color-white);
+      }
+
+      &-adress {
+        margin-bottom: 20px;
+        font-family: PF Agora Slab Pro, sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 35px;
+        text-align: center;
+        color: var(--color-white);
+      }
+
+      &-number {
+        font-family: PF Agora Slab Pro, sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 39px;
+        text-align: center;
+        color: var(--color-blue);
+      }
+    }
+
+    &-arrow {
+      border: 0;
+      outline: none;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    &-prev {
+      position: absolute;
+      left: -38px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &-next {
+      position: absolute;
+      right: -38px;
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+}
+
+// End work
+
+
 // Blog
 
 .blog {
