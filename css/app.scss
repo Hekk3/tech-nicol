@@ -1624,3 +1624,36 @@
 }
 
 // End Reward
+
+
+// Contacts-open
+
+.contacts-open {
+  padding-bottom: 100px;
+
+  &__title {
+    margin-bottom: 50px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: var(--color-black);
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__map {
+    max-width: 430px;
+    object-fit: cover;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 300px;
+    }
+  }
+}
+
+// End Contacts-open

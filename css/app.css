@@ -1098,4 +1098,24 @@ html, body, .wrapper {
   .reward .clients__slider-container {
     justify-self: center; }
 
+.contacts-open {
+  padding-bottom: 100px; }
+  .contacts-open__title {
+    margin-bottom: 50px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: var(--color-black); }
+  .contacts-open__body {
+    display: flex;
+    justify-content: space-between; }
+  .contacts-open__map {
+    max-width: 430px;
+    object-fit: cover; }
+    @media screen and (max-width: 1200px) {
+      .contacts-open__map {
+        max-width: 300px; } }
+
 /*# sourceMappingURL=app.css.map */
