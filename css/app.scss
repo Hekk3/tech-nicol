@@ -54,6 +54,14 @@
       margin-bottom: 5px;
     }
 
+    &-link {
+      transition: color 0.3s;
+
+      &:hover {
+        color: var(--color-blue);
+      }
+    }
+
     &-second {
       font-family: PF Agora Slab Pro, sans-serif;
       font-size: 14px;
@@ -85,6 +93,11 @@
     line-height: 22px;
     text-decoration: none;
     color: var(--color-white);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-blue);
+    }
   }
 
   &.header-none-position {
@@ -276,6 +289,7 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -290,12 +304,37 @@
     }
 
     &-text {
+      position: relative;
+      z-index: 3;
       max-width: 269px;
       font-family: PF Agora Slab Pro, sans-serif;
       font-size: 22px;
       line-height: 31px;
       text-align: center;
       color: var(--color-black);
+      transition: color 0.5s;
+    }
+
+    &-img--hover {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      object-fit: cover;
+      transition: opacity 0.5s;
+    }
+
+    &:hover .services__item-img--hover {
+      opacity: 1;
+    }
+
+    &:hover .services__item-text {
+      color: var(--color-white);
     }
   }
 }
@@ -486,6 +525,8 @@
     // End Styles for custom checkbox
 
     &-button {
+      position: relative;
+      overflow: hidden;
       border: 0;
       outline: none;
       border-radius: 50px;
@@ -494,12 +535,37 @@
       background: linear-gradient(308.06deg, #2D96D4 29.63%, #50C8FF 91.17%);
       cursor: pointer;
 
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        border-radius: 50px;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        background: linear-gradient(138.03deg, #2D96D4 16.3%, #50C8FF 81.94%);
+        transition: transform 0.5s;
+      }
+
       span {
+        position: relative;
+        z-index: 2;
         font-family: PF Agora Slab Pro, sans-serif;
         font-weight: 700;
         font-size: 24px;
         line-height: 29px;
         color: var(--color-white);
+        transition: text-shadow 0.3s;
+      }
+
+      &:hover::before {
+        transform: translateX(0);
+      }
+
+      &:hover span {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
     }
   }
@@ -546,23 +612,51 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid #E0DFDF;
     padding: 32px 60px 20px;
     background: #F5F7F9;
+    cursor: pointer;
 
     &-img {
       margin-bottom: 25px;
+
+      &--hover {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        object-fit: cover;
+        transition: opacity 0.5s;
+      }
     }
 
     &-text {
+      position: relative;
+      z-index: 3;
       font-family: PF Agora Slab Pro, sans-serif;
       font-size: 22px;
       line-height: 35px;
       text-align: center;
       color: var(--color-black);
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    &:hover .flat__item-img--hover {
+      opacity: 1;
+    }
+
+    &:hover .flat__item-text {
+      color: var(--color-white);
+      transform: translate(-30px, -100px);
     }
   }
 }
@@ -610,12 +704,20 @@
     }
 
     &-item {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 20px 24px 10px;
       min-height: 201px;
       background: url(../images/jpg/work-slide-item-bg.jpg) center / cover no-repeat;
+      cursor: pointer;
+
+      &-name,
+      &-adress,
+      &-number {
+        transition: opacity 0.5s;
+      }
 
       &-name {
         margin-bottom: 13px;
@@ -644,6 +746,65 @@
         text-align: center;
         color: var(--color-blue);
       }
+
+      &:hover &-name,
+      &:hover &-adress,
+      &:hover &-number {
+        opacity: 0;
+      }
+
+      &:hover .work__slider-button--hover {
+        opacity: 1;
+      }
+    }
+
+    &-button--hover {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      overflow: hidden;
+      display: block;
+      border-radius: 50px;
+      padding: 20px 58px;
+      text-decoration: none;
+      text-align: center;
+      background: linear-gradient(308.06deg, #2D96D4 29.63%, #50C8FF 91.17%);
+      transform: translate(-50%, -50%);
+      transition: opacity 0.5s;
+      opacity: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        border-radius: 50px;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        background: linear-gradient(138.03deg, #2D96D4 16.3%, #50C8FF 81.94%);
+        transition: transform 0.5s;
+      }
+
+      span {
+        position: relative;
+        z-index: 2;
+        font-family: PF Agora Slab Pro, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: var(--color-white);
+        transition: text-shadow 0.3s;
+      }
+
+      &:hover::before {
+        transform: translateX(0);
+      }
+
+      &:hover span {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
     }
 
     &-arrow {
@@ -653,6 +814,7 @@
       padding: 0;
       background: transparent;
       cursor: pointer;
+      transition: transform 0.3s;
     }
 
     &-prev {
@@ -660,6 +822,10 @@
       left: -38px;
       top: 50%;
       transform: translateY(-50%);
+
+      &:hover {
+        transform: translateY(-50%) scale(1.2);
+      }
     }
 
     &-next {
@@ -667,6 +833,10 @@
       right: -38px;
       top: 50%;
       transform: translateY(-50%) rotate(180deg);
+
+      &:hover {
+        transform: translateY(-50%) rotate(180deg) scale(1.2);
+      }
     }
   }
 }
@@ -694,10 +864,16 @@
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
+    margin-bottom: 50px;
   }
 
   &__item {
     max-width: 270px;
+
+    &-link {
+      display: block;
+      text-decoration: none;
+    }
 
     &-img {
       margin-bottom: 7px;
@@ -743,6 +919,21 @@
       font-size: 10px;
       line-height: 14px;
       color: var(--color-black);
+    }
+  }
+
+  &__more {
+    display: block;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--color-blue);
+    transition: text-shadow 0.3s;
+
+    &:hover {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
   }
 }
@@ -913,6 +1104,8 @@
     }
 
     &-button {
+      position: relative;
+      overflow: hidden;
       display: block;
       border-radius: 50px;
       padding: 16px;
@@ -922,13 +1115,38 @@
       text-align: center;
       background: linear-gradient(308.06deg, #2D96D4 29.63%, #50C8FF 91.17%);
 
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        border-radius: 50px;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        background: linear-gradient(138.03deg, #2D96D4 16.3%, #50C8FF 81.94%);
+        transition: transform 0.5s;
+      }
+
       span {
+        position: relative;
+        z-index: 2;
         font-family: PF Agora Slab Pro, sans-serif;
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
         text-align: center;
         color: var(--color-white);
+        transition: text-shadow 0.3s;
+      }
+
+      &:hover::before {
+        transform: translateX(0);
+      }
+
+      &:hover span {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
     }
   }
@@ -1046,6 +1264,11 @@
     line-height: 17px;
     text-decoration: none;
     color: var(--color-white);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-blue);
+    }
   }
 
   &__social {
