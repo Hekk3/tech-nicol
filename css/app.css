@@ -895,4 +895,95 @@ html, body, .wrapper {
     .services-link__another-item:not(:last-child) {
       margin-bottom: 28px; }
 
+.work-open {
+  padding-bottom: 100px; }
+  .work-open__title {
+    margin-bottom: 50px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: var(--color-black); }
+  .work-open__form {
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 50px; }
+    .work-open__form-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      border-bottom: 2px solid var(--color-black);
+      padding-bottom: 8px; }
+      .work-open__form-item::after {
+        content: url(../images/svg/work-open-arrow.svg);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-70%); }
+    .work-open__form-label, .work-open__form-select {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--color-black); }
+    .work-open__form-label {
+      margin-right: 5px; }
+    .work-open__form-select {
+      border: 0;
+      outline: 0;
+      padding-right: 21px; }
+  .work-open__item {
+    display: grid;
+    grid-gap: 69px;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #E0DFDF;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 5px 20px 2px rgba(124, 125, 129, 0.29); }
+    .work-open__item-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .work-open__item-title {
+      margin-bottom: 30px;
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 39px;
+      color: var(--color-black); }
+    .work-open__item-row {
+      margin-bottom: 25px; }
+      .work-open__item-row--margin {
+        margin-bottom: 120px; }
+    .work-open__item-text {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 18px;
+      line-height: 41px;
+      color: var(--color-black); }
+      .work-open__item-text--black {
+        margin-right: 5px;
+        font-weight: 700; }
+    .work-open__item-link {
+      display: inline-block;
+      border-radius: 50px;
+      padding: 5px 31px;
+      box-shadow: 0px 5px 20px 2px rgba(124, 125, 129, 0.29);
+      text-decoration: none;
+      background: linear-gradient(308.06deg, #2D96D4 29.63%, #50C8FF 91.17%); }
+      .work-open__item-link span {
+        font-family: PF Agora Slab Pro, sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 49px;
+        color: var(--color-white); }
+    .work-open__item:not(:last-child) {
+      margin-bottom: 50px; }
+
+.work-link__list {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+
 /*# sourceMappingURL=app.css.map */
