@@ -1438,3 +1438,143 @@
 }
 
 // End work-link
+
+
+// about
+
+.about {
+  padding-bottom: 100px;
+
+  &__title,
+  &__title-second {
+    margin-bottom: 50px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: var(--color-black);
+  }
+
+  &__text {
+    margin-bottom: 70px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--color-black);
+  }
+
+  &__title-second {
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E0DFDF;
+    padding: 35px 38px 20px;
+    background: #F5F7F9;
+
+    &-img {
+      margin-bottom: 17px;
+    }
+
+    &-text {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 22px;
+      line-height: 35px;
+      text-align: center;
+      color: var(--color-black);
+    }
+  }
+}
+
+// End about
+
+
+// blog-open
+
+.blog-open {
+  padding-bottom: 100px;
+
+  .serivices-link__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .services-link__another-item {
+    max-width: none;
+
+    a {
+      text-decoration: none;
+      color: var(--color-black);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 40px 30px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 75px;
+    widows: 100%;
+  }
+
+  .blog__item {
+    max-width: none;
+
+    &-link {
+      text-decoration: none;
+    }
+  }
+
+  &__more {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 5px 28px;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(308.06deg, #2D96D4 29.63%, #50C8FF 91.17%);
+
+    &-text {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 49px;
+      color: var(--color-white);
+    }
+  }
+}
+
+// End blog-open
+
+
+// blog-link
+
+.blog-link {
+  padding-bottom: 100px;
+  .services-link__another-item {
+    max-width: none;
+
+    a {
+      text-decoration: none;
+      color: var(--color-black);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// End blog-link

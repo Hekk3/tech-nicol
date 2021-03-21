@@ -986,4 +986,88 @@ html, body, .wrapper {
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr; }
 
+.about {
+  padding-bottom: 100px; }
+  .about__title, .about__title-second {
+    margin-bottom: 50px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: var(--color-black); }
+  .about__text {
+    margin-bottom: 70px;
+    font-family: PF Agora Slab Pro, sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--color-black); }
+  .about__title-second {
+    text-align: center; }
+  .about__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .about__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E0DFDF;
+    padding: 35px 38px 20px;
+    background: #F5F7F9; }
+    .about__item-img {
+      margin-bottom: 17px; }
+    .about__item-text {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-size: 22px;
+      line-height: 35px;
+      text-align: center;
+      color: var(--color-black); }
+
+.blog-open {
+  padding-bottom: 100px; }
+  .blog-open .serivices-link__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+  .blog-open .services-link__another-item {
+    max-width: none; }
+    .blog-open .services-link__another-item a {
+      text-decoration: none;
+      color: var(--color-black); }
+    .blog-open .services-link__another-item:not(:last-child) {
+      margin-bottom: 10px; }
+  .blog-open__list {
+    display: grid;
+    grid-gap: 40px 30px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 75px;
+    widows: 100%; }
+  .blog-open .blog__item {
+    max-width: none; }
+    .blog-open .blog__item-link {
+      text-decoration: none; }
+  .blog-open__more {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 5px 28px;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(308.06deg, #2D96D4 29.63%, #50C8FF 91.17%); }
+    .blog-open__more-text {
+      font-family: PF Agora Slab Pro, sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 49px;
+      color: var(--color-white); }
+
+.blog-link {
+  padding-bottom: 100px; }
+  .blog-link .services-link__another-item {
+    max-width: none; }
+    .blog-link .services-link__another-item a {
+      text-decoration: none;
+      color: var(--color-black); }
+    .blog-link .services-link__another-item:not(:last-child) {
+      margin-bottom: 10px; }
+
 /*# sourceMappingURL=app.css.map */
